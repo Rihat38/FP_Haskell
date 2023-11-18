@@ -1,9 +1,7 @@
-module Main where
 import ZipLong
 import Test.HUnit
 import qualified System.Exit as Exit
 
-test1 :: Test
 test1 = TestCase (assertEqual "should return [(1,'a'),(2,'b'),(3,'c')]" [(1,'a'),(2,'b'),(3,'c')] (zipLong [1,2,3] "abc"))
 
 test2 :: Test
